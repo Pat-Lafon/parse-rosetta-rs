@@ -6,7 +6,7 @@ This repo tries to assess Rust parsing performance.
 |-----------|-------------|-------------|--------------------|------------------------|---------------------|---------------------|-----------------|
 | [chumsky] | combinators | in source   | library            | `&str`                 | ?                   | ?                   | ?               |
 | [combine] | combinators | in source   | library            | `&str`                 | ?                   | ?                   | ?               |
-| [lalrpop] | LR(1)       | in grammar  | build script       | `&str`                 | No                  | Yes                 | No              |
+| [lalrpop] | LR(1)       | in grammar  | build script       | `&str`                 | Yes                 | Yes                 | No              |
 | [nom]     | combinators | in source   | library            | `&[u8]`, custom        | No                  | Yes                 | Yes             |
 | [peg]     | PEG         | in grammar  | proc macro (block) | `&str`, `&[T]`, custom | Yes                 | Yes                 | No              |
 | [pest]    | PEG         | external    | proc macro (file)  | `&str`                 | Yes                 | No                  | No              |
